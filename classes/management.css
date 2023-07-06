@@ -1,0 +1,63 @@
+.bullet-points-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  list-style: square;
+  margin-block: 1rem;
+}
+.bullet-points-form button {
+  margin-inline: auto;
+}
+.bullet-points-form .bullet-points-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 0.5rem;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--on-surface);
+  padding: 0.5rem;
+}
+.bullet-points-form .bullet-points-item .delete-bullet-point {
+  display: block;
+  cursor: pointer;
+}
+.bullet-points-form .bullet-points-item .drag-bullet-point {
+  display: block;
+  cursor: grab;
+  fill: var(--color-gray-40);
+}
+.bullet-points-form .bullet-points-item p {
+  line-height: 0px;
+}
+.bullet-points-form .bullet-points-item:has(.bullet-points-input:focus) {
+  border-bottom: 1px solid var(--primary);
+  background-color: var(--surface);
+}
+.bullet-points-form .bullet-points-input {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: auto;
+}
+.class-view {
+  height: 100%;
+}
+.class-view .class-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 2rem;
+}
+.class-view .class-form span {
+  width: 100%;
+}
+.class-view .class-form button[type=submit] {
+  margin-left: auto;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3NcXGJ1bGxldC1wb2ludC5zY3NzIiwic2Nzc1xcc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFDQztFQUNBOztBQUVEO0VBQ0M7RUFDQTtFQUNBOztBQUVEO0VBQ0M7O0FBRUQ7RUFDQztFQUNBOztBQUdGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUMzQ0Y7RUFDQzs7QUFDQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQzs7QUFFRDtFQUNDIiwiZmlsZSI6IiJ9 */

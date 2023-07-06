@@ -1,0 +1,40 @@
+.access__folder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 4rem;
+}
+.access__folder .access-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: start;
+  justify-content: space-around;
+}
+.access__folder .access-details p {
+  max-width: 80%;
+}
+.access__folder .acccess__ailogo {
+  width: auto;
+  height: 36px;
+}
+.access__folder img {
+  max-width: 500px;
+  aspect-ratio: 15/10;
+}
+@media (max-width: 1368px) {
+  .access__folder {
+    flex-direction: column;
+  }
+  .access__folder .access-details {
+    align-items: center;
+  }
+  .access__folder .access-details p {
+    text-align: center;
+  }
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndpZGdldFxcc2Nzc1xcc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0M7O0FBR0Y7RUFDQztFQUNBOztBQUVEO0VBQ0M7RUFDQTs7QUFHRDtFQTVCRDtJQTZCRTs7RUFFQTtJQUNDOztFQUNBO0lBQ0MiLCJmaWxlIjoiIn0= */

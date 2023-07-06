@@ -1,0 +1,127 @@
+h2 {
+  margin-bottom: 50px;
+  color: var(--on-background);
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("assets/login.png");
+}
+.page-container .theme-switcher {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 0.5rem;
+}
+.page-container .form-container {
+  position: relative;
+  border-radius: var(--border-radius-base);
+  padding: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--surface);
+  box-shadow: var(--shadow-6);
+}
+.page-container .form-container .aip-chat-logo {
+  width: 155px;
+  height: 40px;
+  margin-bottom: 2.5rem;
+}
+.page-container .form-container h1 {
+  margin-bottom: 2rem;
+}
+@media (max-width: 1368px) {
+  .page-container .form-container {
+    padding: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .page-container .form-container {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0rem;
+    border-radius: 0;
+  }
+}
+.page-container .form-error {
+  padding: 15px 0;
+  color: var(--error);
+  font-weight: 700;
+}
+.page-container h5 {
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+}
+.page-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  gap: 1rem;
+  background: var(--bg-element);
+  min-width: 65%;
+}
+@media (max-width: 768px) {
+  .page-container form {
+    min-width: 0;
+    width: 100vw;
+    padding: 1rem;
+  }
+}
+.page-container form input {
+  background-color: var(--background);
+  color: var(--on-primary-container);
+}
+.page-container form input:focus {
+  border-color: var(--primary);
+}
+.page-container form .form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  cursor: pointer;
+}
+.page-container form .form-actions button {
+  border-radius: var(--border-radius-lg);
+  min-width: 100px;
+}
+@media (max-width: 768px) {
+  .page-container form .form-actions {
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.page-container form .social-login {
+  position: relative;
+  margin: 1rem auto 0;
+  width: 100%;
+  text-align: center;
+}
+.page-container form .social-login::before, .page-container form .social-login::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  width: calc(50% - 150px);
+  background-color: var(--color-gray-30);
+}
+.page-container form .social-login::before {
+  left: 0;
+}
+.page-container form .social-login::after {
+  right: 0;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndpZGdldFxcc2Nzc1xcc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQztFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVEO0VBTUM7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQWJBO0VBQ0M7RUFDQTtFQUNBOztBQVdEO0VBQ0M7O0FBR0Q7RUFuQkQ7SUFvQkU7OztBQUdEO0VBdkJEO0lBd0JFO0lBQ0E7SUFDQTtJQUNBO0lBQ0E7OztBQUlGO0VBQ0M7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBUkQ7SUFTRTtJQUNBO0lBQ0E7OztBQUdEO0VBQ0M7RUFDQTs7QUFFQTtFQUNDOztBQUlGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDQztFQUNBOztBQUdEO0VBWEQ7SUFZRTtJQUNBO0lBQ0E7OztBQUlGO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBQ0E7RUFFQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDIiwiZmlsZSI6IiJ9 */

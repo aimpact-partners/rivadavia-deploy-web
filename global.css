@@ -1,0 +1,305 @@
+dialog {
+  padding: 2rem 4rem;
+  place-items: center;
+  border: none;
+  box-shadow: var(--shadow-6);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  color: var(--on-surface);
+  text-align: center;
+}
+dialog header {
+  margin-block: 2rem 1.5rem;
+}
+dialog footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+dialog .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+dialog .close svg {
+  fill: var(--color-gray-40) !important;
+}
+dialog .dialog__info {
+  background-color: var(--background);
+  color: var(--color-gray-40);
+  border-radius: var(--border-radius-sm);
+  padding: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+dialog::backdrop {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+@media (max-width: 768px) {
+  dialog {
+    width: 100vw;
+  }
+}
+input {
+  color: var(--text-color);
+}
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--on-surface);
+  background-color: var(--surface) !important;
+}
+
+select {
+  border: 1px solid var(--color-gray-40);
+  outline: none;
+  width: 100%;
+  background: var(--surface);
+  color: var(--on-surface);
+  border-radius: var(--border-radius-sm);
+  padding: 0.75rem;
+  /* 	-moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%; */
+}
+
+option {
+  overflow-x: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+.is-fetching {
+  opacity: 0.5;
+  transition: all ease-in-out 0.3s;
+}
+* {
+  font-family: var(--font-family);
+  box-sizing: border-box;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.section-title {
+  border-bottom: 1.5px solid var(--color-gray-80);
+  margin-bottom: 1rem;
+}
+.section-title h1 {
+  text-transform: capitalize;
+  padding-bottom: 0.5rem;
+}
+@media (max-width: 768px) {
+  .section-title {
+    display: none;
+  }
+}
+@media (min-width: 667px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1080px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1080px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 667px) {
+  h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1080px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1080px) {
+  h4 {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 667px) {
+  a {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1080px) {
+  a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 667px) {
+  p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1080px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 667px) {
+  input {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1080px) {
+  input {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 667px) {
+  textarea {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1080px) {
+  textarea {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 667px) {
+  select {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1080px) {
+  select {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 667px) {
+  option {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1080px) {
+  option {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 667px) {
+  button {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1080px) {
+  button {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1080px) {
+  label {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1080px) {
+  caption {
+    font-size: 14px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+button,
+label,
+caption,
+textarea,
+input,
+select,
+option {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+h1 {
+  line-height: 31px;
+}
+
+h2 {
+  line-height: 26px;
+}
+
+h3 {
+  line-height: 24px;
+}
+
+h4 {
+  line-height: 18px;
+}
+
+button {
+  line-height: 19px;
+}
+
+p,
+input,
+textarea,
+select {
+  line-height: 22px;
+}
+
+label {
+  line-height: 14px;
+}
+
+.title-xl {
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.overline {
+  font-size: 12px;
+  color: var(--color-gray-40);
+  line-height: 17px;
+}
+
+code {
+  font-family: "Source Code Pro", monospace;
+}

@@ -1,0 +1,164 @@
+.beyond-alert-dialog.beyond-alert-dialog-centered .alert-dialog-content,
+.beyond-alert-dialog.beyond-alert-dialog-centered .actions {
+  display: grid;
+  justify-content: center;
+}
+.beyond-alert-dialog .alert-dialog-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.beyond-alert-dialog .alert-dialog-content h3,
+.beyond-alert-dialog .alert-dialog-content div {
+  color: var(--text);
+}
+.beyond-alert-dialog .alert-dialog-content h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.beyond-alert-dialog .actions {
+  border-top: 1px solid var(--gray-light);
+  margin-top: 15px;
+  display: grid;
+  justify-content: end;
+  padding: 15px 0 0;
+}
+.beyond-alert-dialog .actions .beyond-button {
+  margin: 0;
+}
+.pragmate-modal .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: none;
+  display: inline-block;
+  fill: var(--gray);
+  color: var(--gray);
+  transition: all 100ms ease-in;
+  outline: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.pragmate-modal .close-icon:hover, .pragmate-modal .close-icon:focus {
+  fill: var(--gray-dark);
+  color: var(--gray);
+  transition: all 100ms ease-in;
+}
+.pragmate-modal .close-icon svg {
+  height: 12px;
+  width: 13px;
+  fill: var(--text);
+}
+.beyond-confirm-dialog.beyond-confirm-dialog-centered {
+  justify-content: center;
+  text-align: center;
+}
+.beyond-confirm-dialog.beyond-confirm-dialog-centered .confirm-dialog-content,
+.beyond-confirm-dialog.beyond-confirm-dialog-centered .actions {
+  display: grid;
+  justify-content: center;
+}
+.beyond-confirm-dialog.beyond-confirm-dialog-centered p, .beyond-confirm-dialog.beyond-confirm-dialog-centered div {
+  color: var(--text);
+}
+.beyond-confirm-dialog .confirm-dialog-content p,
+.beyond-confirm-dialog .confirm-dialog-content div,
+.beyond-confirm-dialog .confirm-dialog-content h3,
+.beyond-confirm-dialog .confirm-dialog-content h4 {
+  color: var(--text);
+}
+.beyond-confirm-dialog .actions {
+  border-top: 1px solid var(--gray-light);
+  padding: 15px 0 0;
+  margin-top: 15px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+  justify-content: end;
+}
+.beyond-confirm-dialog .actions .beyond-button {
+  margin: 0;
+  min-width: 6rem;
+}
+.beyond-confirm-dialog.modal-confirm {
+  transform: none;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 14px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: var(--border-secondary);
+  display: flex;
+  flex-direction: row-reverse;
+}
+.beyond-confirm-dialog.modal-confirm .modal-content {
+  padding: 8px 0px 0 0;
+  max-width: 400px;
+}
+.beyond-confirm-dialog.modal-confirm .modal-content p {
+  margin: 0;
+  font-size: 15px;
+}
+.beyond-confirm-dialog.modal-confirm .modal-content summary {
+  font-size: 17px;
+  font-weight: 500;
+}
+.beyond-confirm-dialog.modal-confirm .close-modal {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+body.body-beyond-modal-opened {
+  height: 100vh;
+  overflow-y: hidden;
+  padding-right: 15px; /* Avoid width reflow */
+}
+
+.pragmate-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--text);
+}
+.pragmate-modal.show-modal {
+  display: block;
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+}
+.pragmate-modal .modal-wrapper {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  height: 100%;
+}
+@media screen and (max-height: 500px) {
+  .pragmate-modal .modal-wrapper {
+    height: auto;
+  }
+}
+.pragmate-modal .modal-content {
+  position: relative;
+  color: var(--text);
+  background: var(--background);
+  padding: 1.5rem;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvZGVcXHNjc3NcXGFsZXJ0LWRpYWxvZy5zY3NzIiwiY29kZVxcc2Nzc1xcY2xvc2UtaWNvbi5zY3NzIiwiY29kZVxcc2Nzc1xcY29uZmlybS1kaWFsb2cuc2NzcyIsImNvZGVcXHNjc3NcXG1vZGFsLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUk7QUFBQTtFQUVFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7O0FBQ0E7QUFBQTtFQUVFOztBQUVGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUM5Qkw7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUVDO0VBQ0E7RUFDQTs7QUFHRDtFQUNDO0VBQ0E7RUFDQTs7QUN6QkQ7RUFDRTtFQUNBOztBQUVBO0FBQUE7RUFFRTtFQUNBOztBQUVGO0VBQ0U7O0FBR0o7QUFBQTtBQUFBO0FBQUE7RUFJRTs7QUFFRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7O0FBQ0E7RUFDRTtFQUNBOztBQUNBO0VBQ0U7RUFDQTs7QUFFRjtFQUNFO0VBQ0E7O0FBR0o7RUFDRTtFQUNBO0VBQ0E7RUFFQTtFQUVBO0VBRUE7RUFDQTtFQUNBO0VBQ0E7O0FDdkVOO0VBQ0M7RUFDQTtFQUNBOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7O0FBSUQ7RUFDQztFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQVJEO0lBU0U7OztBQVdGO0VBQ0M7RUFDQTtFQUNBO0VBQ0EiLCJmaWxlIjoiIn0= */

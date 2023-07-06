@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rivadavia</title>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+
+  <meta http-equiv="Cross-Origin-Embedder-Policy-Report-Only" content="require-corp">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Source+Code+Pro:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="/assets/rvd.png">
+
+  <link rel="stylesheet" type="text/css" id="beyond-application-styles" href="/styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" id="beyond-global-styles" href="/global.css" media="screen" />
+    <link rel="icon" href="data:;base64,=">
+    
+    <script>
+    globalThis.__app_package = {"specifier":"@aimpact/ailearn-estrada","vspecifier":"@aimpact/ailearn-estrada@0.0.2","version":"0.0.2","dependencies":[["@beyond-js/reactive","1.0.1"],["@aimpact/chat-api","1.0.0"],["@aimpact/media-manager","1.0.0"],["pragmate-ui","0.0.36"],["@beyond-js/backend","0.1.6"],["@beyond-js/events","0.0.6"],["@beyond-js/kernel","0.1.9"],["@beyond-js/local","0.1.3"],["@beyond-js/react-18-widgets","1.0.0"],["@beyond-js/widgets","0.1.4"],["@bgroup/ui","0.0.34"],["@firebase/component","0.6.4"],["@firebase/logger","0.4.0"],["@firebase/util","1.9.3"],["@google-cloud/error-reporting","3.0.5"],["@google-cloud/logging","10.5.0"],["@types/dom-mediacapture-record","1.0.16"],["dayjs","1.11.8"],["dexie","3.2.4"],["dompurify","3.0.3"],["firebase","9.22.2"],["firebase-admin","11.9.0"],["highlight.js","11.8.0"],["marked","5.1.0"],["marked-highlight","2.0.1"],["marked-mangle","1.1.0"],["openai","3.2.1"],["prismjs","1.29.0"],["react-select","5.7.3"],["socket.io-client","4.6.2"],["uuid","9.0.0"],["@aimpact/ailearn-estrada","0.0.2"]]};
+    
+    // Set global baseDir and baseUrl variables
+    const baseDir = globalThis.baseDir = '/';
+    const baseUrl = globalThis.baseUrl = (() => {
+        const {protocol, host, pathname} = location;
+        if (protocol === 'file:') {
+            const path = pathname.split('/');
+            path.pop(); // Remove 'index.html'
+            path.join('/');
+            return `file://${path.join('/')}`;
+        }
+        else {
+            return `${protocol}//${host}${baseDir}`;
+        }
+    })();
+    </script>
+    
+    
+    <script src="/packages/@beyond-js/kernel@0.1.9/vendor/s.js"></script>
+    <script type="module">
+    const {specifier, vspecifier} = globalThis.__app_package;
+    const baseDir = '/';
+    System.constructor.prototype.resolve = (id, parent) => {
+        let [resource, qs] = id.split('?');
+        qs = qs ? `?${qs}` : '';
+        const split = resource.split('/');
+        const pkg = split[0].startsWith('@') ? `${split.shift()}/${split.shift()}` : split.shift();
+    
+        const subpath = split.join('/');
+        if ([specifier, vspecifier].includes(pkg)) return `${baseDir}${subpath}.js${qs}`;
+        return `${baseDir}packages/${pkg}${subpath ? `/${subpath}` : ``}.js${qs}`;
+    };
+    Promise.all([
+    	System.import('@beyond-js/widgets@0.1.4/render'),
+    	System.import('@beyond-js/widgets@0.1.4/application'),
+    	System.import('@beyond-js/widgets@0.1.4/layout')
+    ]);
+    Promise.all([
+    	System.import('@beyond-js/kernel@0.1.9/routing'),
+    	System.import('@aimpact/ailearn-estrada/start')
+    ]).then(([{routing}]) => routing.setup());
+    </script>
+    
+</head>
+
+<body>
+  <!-- top bar for iOS -->
+  <div class="topbar"></div>
+  <div class="layouts-container"></div>
+  <div class="loading-container"></div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+.essential__toasts {
+  max-height: 100vh;
+  position: fixed;
+  z-index: 50;
+  display: grid;
+  gap: 1rem;
+}
+.essential__toasts .toast {
+  border-radius: 10px;
+  max-width: 300px;
+  padding: 0.6rem 1.2rem 0.6rem 0.8rem;
+  display: grid;
+  grid-template-columns: 25px calc(100% - 25px);
+  gap: 0.5rem;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.essential__toasts .toast p.message {
+  color: #fff;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 400;
+}
+.essential__toasts .toast svg.pragmate-icon {
+  width: 25px;
+  height: 25px;
+  stroke: #fff;
+  fill: #fff;
+}
+.essential__toasts .toast.enter {
+  animation: toast-enter 0.4s cubic-bezier(0.75, -0.5, 0, 1.75) both;
+}
+.essential__toasts .toast.exit {
+  animation: toast-exit 0.4s cubic-bezier(0.75, -0.5, 0, 1.75) both;
+}
+.essential__toasts .toast .icon {
+  width: 25px;
+  height: 25px;
+}
+.essential__toasts .toast.success {
+  background: var(--success-container);
+}
+.essential__toasts .toast.error {
+  background: var(--error-container);
+}
+.essential__toasts .toast.warning {
+  background: var(--warning-container);
+}
+.essential__toasts .toast.info {
+  background: var(--info-container);
+}
+.essential__toasts .toast.loading {
+  background: var(--info-container);
+}
+
+@keyframes toast-enter {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+}
+@keyframes toast-exit {
+  from {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvZGVcXHNhc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNDO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0MsT0F0QjJDO0VBdUIzQztFQUNBO0VBQ0E7O0FBR0Q7RUFDQztFQUNBO0VBQ0EsUUEvQjJDO0VBZ0MzQyxNQWhDMkM7O0FBbUM1QztFQUNDOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQztFQUNBOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQzs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7O0FBR0Q7RUFDQzs7O0FBS0g7RUFDQztJQUNDO0lBQ0E7O0VBRUQ7SUFDQztJQUNBOzs7QUFJRjtFQUNDO0lBQ0M7SUFDQTs7RUFFRDtJQUNDO0lBQ0EiLCJmaWxlIjoiIn0= */
