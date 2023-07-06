@@ -231,11 +231,11 @@
   :root {
     --text-color: #fff;
     --font-family: "Rubik", sans-serif;
-    --primary: #0c51aa;
-    --on-primary: #bbbbbb;
+    --primary: #115efa;
+    --on-primary: #fff;
     --primary-container: #222222;
     --on-primary-container: #dddddd;
-    --secondary: #1dafed;
+    --secondary: #666666;
     --on-secondary: #999999;
     --secondary-container: #444444;
     --on-secondary-container: #bbbbbb;
@@ -262,7 +262,7 @@
     --error-container: #e2611d;
     --error: #fdeadf;
     --on-error: #e2611d;
-    --app-text-highlight: var(--primary);
+    --app-text-highlight: var(--warning-container);
   }
 }
 
@@ -302,11 +302,11 @@ html[data-beyond-mode=light] {
 html[data-beyond-mode=dark] {
   --text-color: #fff;
   --font-family: "Rubik", sans-serif;
-  --primary: #0c51aa;
-  --on-primary: #bbbbbb;
+  --primary: #115efa;
+  --on-primary: #fff;
   --primary-container: #222222;
   --on-primary-container: #dddddd;
-  --secondary: #1dafed;
+  --secondary: #666666;
   --on-secondary: #999999;
   --secondary-container: #444444;
   --on-secondary-container: #bbbbbb;
@@ -333,7 +333,7 @@ html[data-beyond-mode=dark] {
   --error-container: #e2611d;
   --error: #fdeadf;
   --on-error: #e2611d;
-  --app-text-highlight: var(--primary);
+  --app-text-highlight: var(--warning-container);
 }
 html,
 body {

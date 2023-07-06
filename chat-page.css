@@ -272,7 +272,7 @@ pre {
   flex-direction: column;
   justify-content: flex-end;
   color: var(--on-primary);
-  background: url("/assets/banner.jpeg");
+  background: url("/assets/rvd-banner.jpeg");
   border-radius: var(--border-radius-base);
   background-position: center;
   background-size: cover;

@@ -37,7 +37,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       INTERNAL MODULE: ./free-plan
       ***************************/
       ims.set('./free-plan', {
-        hash: 2849506604,
+        hash: 258975726,
         creator: function (require, exports) {
           "use strict";
 
@@ -52,10 +52,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
             const {
               title,
               description,
-              btnText,
-              advantages,
-              primary,
-              secondary
+              advantages
             } = props;
             const HEADER = title.charAt(0).toUpperCase() + title.slice(1);
             const listAdvanges = advantages.map((advantage, index) => React.createElement("li", {
@@ -76,7 +73,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
               className: "price__h2"
             }, "Free Forever"), React.createElement(_form.Button, {
               variant: "primary"
-            }, btnText)), React.createElement("div", {
+            }, "Sign up")), React.createElement("div", {
               className: "container-advantages"
             }, React.createElement("ul", null, listAdvanges)));
           }
@@ -88,7 +85,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       ***********************/
 
       ims.set('./index', {
-        hash: 812753311,
+        hash: 880269447,
         creator: function (require, exports) {
           "use strict";
 
@@ -101,14 +98,14 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
           var _premiumPlan = require("./premium-plan");
           /* bundle */
           function Pricing({
-            level = "free",
+            variant = "free",
             ...props
           }) {
             const planComponents = {
               free: _freePlan.FreePlan,
               premium: _premiumPlan.PremiumPlan
             };
-            const PlanComponent = planComponents[level];
+            const PlanComponent = planComponents[variant];
             return React.createElement("div", {
               className: "container_princigs"
             }, React.createElement(PlanComponent, {
@@ -123,7 +120,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       ******************************/
 
       ims.set('./premium-plan', {
-        hash: 2448779174,
+        hash: 1577437274,
         creator: function (require, exports) {
           "use strict";
 
@@ -139,10 +136,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
               title,
               price,
               description,
-              btnText,
-              advantages,
-              primary,
-              secondary
+              advantages
             } = props;
             const HEADER = title.charAt(0).toUpperCase() + title.slice(1);
             const listAdvanges = advantages.map((advantage, index) => React.createElement("li", {
@@ -163,7 +157,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
               className: "price__h2"
             }, price, " \u20AC/month"), React.createElement(_form.Button, {
               variant: "primary"
-            }, btnText)), React.createElement("div", {
+            }, "Suscribe now")), React.createElement("div", {
               className: "container-advantages"
             }, React.createElement("ul", null, listAdvanges)));
           }
@@ -175,7 +169,7 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
       ***********************/
 
       ims.set('./types', {
-        hash: 4252164912,
+        hash: 999835711,
         creator: function (require, exports) {
           "use strict";
 
@@ -206,4 +200,4 @@ System.register(["@beyond-js/kernel@0.1.9/bundle", "@beyond-js/kernel@0.1.9/styl
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,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QUFTLEdBQUVsQixPQUFPLENBQVUsQ0FDeEMsRUFFTlk7Y0FBS0ksU0FBUyxFQUFDO1lBQXNCLEdBQ25DSixnQ0FBS0osWUFBWSxDQUFNLENBQ25CLENBQ0U7VUFFZDs7Ozs7Ozs7Ozs7VUM1QkE7O1VBRUFtQjtZQUNBQztVQUNBIiwibmFtZXMiOlsiRnJlZVBsYW4iLCJwcm9wcyIsInRpdGxlIiwiZGVzY3JpcHRpb24iLCJidG5UZXh0IiwiYWR2YW50YWdlcyIsInByaW1hcnkiLCJzZWNvbmRhcnkiLCJIRUFERVIiLCJjaGFyQXQiLCJ0b1VwcGVyQ2FzZSIsInNsaWNlIiwibGlzdEFkdmFuZ2VzIiwibWFwIiwiYWR2YW50YWdlIiwiaW5kZXgiLCJSZWFjdCIsImtleSIsIkljb24iLCJpY29uIiwiY2xhc3NOYW1lIiwiQnV0dG9uIiwidmFyaWFudCIsIlByaWNpbmciLCJsZXZlbCIsInBsYW5Db21wb25lbnRzIiwiZnJlZSIsInByZW1pdW0iLCJQcmVtaXVtUGxhbiIsIlBsYW5Db21wb25lbnQiLCJwcmljZSIsIk9iamVjdCIsInZhbHVlIl0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJjb2RlL3RzL2ZyZWUtcGxhbi50c3giLCJjb2RlL3RzL2luZGV4LnRzeCIsImNvZGUvdHMvcHJlbWl1bS1wbGFuLnRzeCIsImNvZGUvdHMvdHlwZXMudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbCxudWxsXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,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O1VBRWQ7Ozs7Ozs7Ozs7O1VDM0JBOztVQUVBa0I7WUFDQUM7VUFDQSIsIm5hbWVzIjpbIkZyZWVQbGFuIiwicHJvcHMiLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwiYWR2YW50YWdlcyIsIkhFQURFUiIsImNoYXJBdCIsInRvVXBwZXJDYXNlIiwic2xpY2UiLCJsaXN0QWR2YW5nZXMiLCJtYXAiLCJhZHZhbnRhZ2UiLCJpbmRleCIsIlJlYWN0Iiwia2V5IiwiSWNvbiIsImljb24iLCJjbGFzc05hbWUiLCJCdXR0b24iLCJ2YXJpYW50IiwiUHJpY2luZyIsInBsYW5Db21wb25lbnRzIiwiZnJlZSIsInByZW1pdW0iLCJQcmVtaXVtUGxhbiIsIlBsYW5Db21wb25lbnQiLCJwcmljZSIsIk9iamVjdCIsInZhbHVlIl0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJjb2RlL3RzL2ZyZWUtcGxhbi50c3giLCJjb2RlL3RzL2luZGV4LnRzeCIsImNvZGUvdHMvcHJlbWl1bS1wbGFuLnRzeCIsImNvZGUvdHMvdHlwZXMudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbCxudWxsXX0=

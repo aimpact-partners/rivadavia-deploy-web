@@ -2,7 +2,9 @@
 
 ## URL de la aplicacion web
 
-[https://cheerful-treacle-e0b3f4.netlify.app]
+Chat: [https://chat.aimpact.partners]
+
+Rivadavia: [https://rvd.aimpact.partners]
 
 ## Actualizar propiedades de urls cloud en la propiedad "params" del package.json
 
